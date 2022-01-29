@@ -1,6 +1,10 @@
 function grade(){
    var result = (document.getElementById("number").value);
 
+
+  if (result > 101) {
+    document.getElementById("view").innerHTML = "Input your valid number";
+  }
    if (result <=0){
       document.getElementById("view").innerHTML = "Enter Your Number";
    }
@@ -22,7 +26,5 @@ function grade(){
     else if (result >= 90 && result < 100) {
       document.getElementById("view").innerHTML = "You got A+";
     }
-    else if (result < 100) {
-      document.getElementById("view").innerHTML = "Input your valid number";
-    }
+    
 }
