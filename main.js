@@ -19,10 +19,10 @@ function grade(){
     else if (result >= 80 && result < 90) {
       document.getElementById("view").innerHTML = "You got A";
     }
-    else if (result >= 90) {
+    else if (result >= 90 && result < 100) {
       document.getElementById("view").innerHTML = "You got A+";
     }
-    else if (result >= 101) {
+    else if (result > 100) {
       document.getElementById("view").innerHTML = "Input your valid number";
     }
 }
